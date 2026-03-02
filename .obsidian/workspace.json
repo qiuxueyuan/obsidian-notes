@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05 学习笔记/未命名.md",
+                "file": "05 学习笔记/0302-Docker 基础入门.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "0302-Docker 基础入门"
             }
           }
         ],
@@ -223,11 +223,11 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "99fdbba38b96990f",
+  "active": "e5ff9ce0aadf364b",
   "lastOpenFiles": [
+    "05 学习笔记/未命名.md",
     "05 学习笔记/0302-Docker 基础入门.md",
     "05 学习笔记/Obsidian + Claudian + GitHub 同步教程.md",
-    "05 学习笔记/未命名.md",
     "00 总览/模板/学习笔记模板.md",
     "00 总览/模板/算法题模板.md",
     "00 总览/模板/通用笔记模板.md",
