@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tutorials/Obsidian + Claudian + GitHub 同步教程.md",
+                "file": "01 编程语言/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "40eac8eaf14f5a1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 学习笔记/Obsidian + Claudian + GitHub 同步教程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Obsidian + Claudian + GitHub 同步教程"
             }
+          },
+          {
+            "id": "e5ff9ce0aadf364b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05 学习笔记/未命名.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "未命名"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -180,7 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 436.5
+    "width": 1255.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,14 +223,43 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "4b43050663a26531",
+  "active": "99fdbba38b96990f",
   "lastOpenFiles": [
-    "README.md",
-    "README.md.bak",
-    "obsidian-notes/README.md",
-    "obsidian-notes",
-    "欢迎.md",
+    "05 学习笔记/0302-Docker 基础入门.md",
+    "05 学习笔记/Obsidian + Claudian + GitHub 同步教程.md",
+    "05 学习笔记/未命名.md",
+    "00 总览/模板/学习笔记模板.md",
+    "00 总览/模板/算法题模板.md",
+    "00 总览/模板/通用笔记模板.md",
+    "00 总览/模板/踩坑记录模板.md",
+    "00 总览/模板",
+    "01 编程语言/01-编程语言索引.md",
+    "02 框架工具/02-框架工具索引.md",
+    "03 项目实战/03-项目实战索引.md",
+    "03 项目实战/README.md",
+    "04 面试刷题/04-面试刷题索引.md",
+    "99 资源附件/README.md",
+    "01 编程语言/README.md",
+    "00 总览/README.md",
+    "00 总览/00-知识库入口.md",
+    "06 效率方法/README.md",
+    "05 学习笔记/README.md",
+    "04 面试刷题/README.md",
+    "02 框架工具/README.md",
+    "99 资源附件/99-资源附件索引.md",
+    "05 学习笔记/05-学习笔记索引.md",
     "tutorials/Obsidian + Claudian + GitHub 同步教程.md",
-    "tutorials"
+    "06 效率方法/06-效率方法索引.md",
+    "99 资源附件",
+    "06 效率方法",
+    "05 学习笔记",
+    "04 面试刷题",
+    "03 项目实战",
+    "02 框架工具",
+    "01 编程语言",
+    "00 总览",
+    "欢迎.md",
+    "sync.sh",
+    "README.md"
   ]
 }

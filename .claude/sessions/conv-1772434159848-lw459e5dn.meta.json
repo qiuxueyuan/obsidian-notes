@@ -1,0 +1,19 @@
+{
+  "id": "conv-1772434159848-lw459e5dn",
+  "title": "现在的这个库的目录结构不符合我的AI知识库搭建需求，我想为这个文件夹场景一个目录树，按照下面的这种去...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1772434159858,
+  "updatedAt": 1772440219534,
+  "lastResponseAt": 1772440219534,
+  "sessionId": "2a9d504b-5680-41c9-b24d-57bc8c22c36e",
+  "sdkSessionId": "2a9d504b-5680-41c9-b24d-57bc8c22c36e",
+  "usage": {
+    "model": "qwen3.5-plus",
+    "inputTokens": 0,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 0,
+    "percentage": 0
+  }
+}
