@@ -1,4 +1,4 @@
-VAULT_PATH="$HOME/Documents/Obsidian/Obsidian"
+VAULT_PATH="$HOME/Documents/Obsidian"
 MESSAGE="${1:-Auto sync from $(date '+%Y-%m-%d %H:%M')}"
 
 cd "$VAULT_PATH" || exit

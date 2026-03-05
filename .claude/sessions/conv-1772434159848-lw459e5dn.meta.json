@@ -1,19 +1,23 @@
 {
   "id": "conv-1772434159848-lw459e5dn",
-  "title": "现在的这个库的目录结构不符合我的AI知识库搭建需求，我想为这个文件夹场景一个目录树，按照下面的这种去...",
-  "titleGenerationStatus": "failed",
+  "title": "Greet in Chinese",
+  "titleGenerationStatus": "success",
   "createdAt": 1772434159858,
-  "updatedAt": 1772440482922,
-  "lastResponseAt": 1772440482922,
-  "sessionId": "2a9d504b-5680-41c9-b24d-57bc8c22c36e",
-  "sdkSessionId": "2a9d504b-5680-41c9-b24d-57bc8c22c36e",
+  "updatedAt": 1772689457378,
+  "lastResponseAt": 1772689457378,
+  "sessionId": "7bea6343-a823-47e3-9068-3739b7444d61",
+  "sdkSessionId": "7bea6343-a823-47e3-9068-3739b7444d61",
+  "previousSdkSessionIds": [
+    "2a9d504b-5680-41c9-b24d-57bc8c22c36e"
+  ],
+  "currentNote": "00 总览/00-知识库入口.md",
   "usage": {
     "model": "qwen3.5-plus",
-    "inputTokens": 0,
+    "inputTokens": 498,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 0,
+    "cacheReadInputTokens": 43392,
     "contextWindow": 200000,
-    "contextTokens": 0,
-    "percentage": 0
+    "contextTokens": 43890,
+    "percentage": 22
   }
 }

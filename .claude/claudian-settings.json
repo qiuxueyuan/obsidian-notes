@@ -54,7 +54,7 @@
     "~/Downloads"
   ],
   "persistentExternalContextPaths": [],
-  "environmentVariables": "ANTHROPIC_API_KEY=sk-7318d4b6dade4b95b7a41d98f18c2064 \nANTHROPIC_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1\nANTHROPIC_MODEL=qwen3.5-plus",
+  "environmentVariables": "ANTHROPIC_API_KEY=sk-sp-fab26b7a3e0d479ea03df16a5dbe2bd9\nANTHROPIC_BASE_URL=https://coding.dashscope.aliyuncs.com/apps/anthropic\nANTHROPIC_MODEL=qwen3.5-plus",
   "envSnippets": [],
   "customContextLimits": {},
   "keyboardNavigation": {
@@ -70,7 +70,7 @@
   "loadUserClaudeSettings": true,
   "lastClaudeModel": "haiku",
   "lastCustomModel": "",
-  "lastEnvHash": "ANTHROPIC_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1|ANTHROPIC_MODEL=qwen3.5-plus",
+  "lastEnvHash": "ANTHROPIC_BASE_URL=https://coding.dashscope.aliyuncs.com/apps/anthropic|ANTHROPIC_MODEL=qwen3.5-plus",
   "maxTabs": 3,
   "tabBarPosition": "input",
   "enableAutoScroll": true,
