@@ -92,31 +92,17 @@
             }
           },
           {
-            "id": "8f7c6c4656b072b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 总览/00-知识库主页.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00-知识库主页"
-            }
-          },
-          {
             "id": "e805d609a5634a07",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 编程语言/鸿蒙/0305-鸿蒙开发.md",
+                "file": "00 总览/00-知识库入口.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0305-鸿蒙开发"
+              "title": "00-知识库入口"
             }
           }
         ],
@@ -152,7 +138,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "2a15390713ec4c22b8b4c6185b71373b",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -173,11 +159,12 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 296.5
   },
   "right": {
     "id": "ef997eb5cc8ba3c2",
@@ -295,9 +282,14 @@
   },
   "active": "99fdbba38b96990f",
   "lastOpenFiles": [
+    "claudian-settings.json",
+    "未命名.canvas",
+    "00 总览/00-知识库主页.md",
+    "assets/js/date-display.js",
+    "assets/js",
+    "assets",
     "index.html",
     "00 总览/00-知识库入口.md",
-    "00 总览/00-知识库主页.md",
     "60 每日60s读懂世界/2026-03-10.png",
     "01 编程语言/鸿蒙/0306-鸿蒙 ArkTS 面向对象学习笔记.md",
     "05 学习笔记/0306-鸿蒙ArkTS 面向对象学习笔记.md",
@@ -326,17 +318,13 @@
     "skills-lock.json",
     "05 学习笔记/0302-Docker 基础入门.md",
     "60  每日60s读懂世界",
-    "未命名文件夹",
     "05 学习笔记/未命名.md",
     "00 总览/模板/学习笔记模板.md",
-    "01 编程语言/Python",
     "00 总览/未命名 1.md",
     "05 学习笔记/05-学习笔记索引.md",
     "05 学习笔记/Obsidian + Claudian + GitHub 同步教程.md",
     "02 框架工具/README.md",
     "00 总览/模板/踩坑记录模板.md",
-    "00 总览/模板/算法题模板.md",
-    "00 总览/模板",
-    "99 资源附件"
+    "00 总览/模板/算法题模板.md"
   ]
 }
