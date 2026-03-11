@@ -236,5 +236,5 @@ print(f"Even squares: {even_squares}")
 
 ### 相关笔记链接
 - [[Python 装饰器详解]] - 待创建
-- [[Python 面向对象编程]] - 待创建
+- [[Python/0305-Python 面向对象编程]] - 已创建
 - [[Python 标准库常用模块]] - 待创建

@@ -279,7 +279,7 @@ print(f"77°F = {converter.convert('C'):.1f}°C")
 - 《Effective Python》第 4 章 - OOP 最佳实践
 
 ### 相关笔记链接
-- [[0303-Python 基础语法]] - 基础语法笔记
+- [[Python/0303-Python 基础语法]] - 基础语法笔记
 - [[Python 装饰器详解]] - 待创建（与属性装饰器相关）
 - [[Python 设计模式]] - 待创建
 - [[Python 特殊方法详解]] - 待创建

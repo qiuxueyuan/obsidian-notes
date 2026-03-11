@@ -1,0 +1,22 @@
+{
+  "id": "conv-1773024547554-vngzkb8fz",
+  "title": "Continue Today's Study Notes",
+  "titleGenerationStatus": "success",
+  "createdAt": 1773024547556,
+  "updatedAt": 1773199677643,
+  "lastResponseAt": 1773199677643,
+  "sessionId": "dfa4f516-ff2f-49a3-8ee3-dd8eaceeac34",
+  "sdkSessionId": "dfa4f516-ff2f-49a3-8ee3-dd8eaceeac34",
+  "previousSdkSessionIds": [
+    "1590d8c6-216d-4ef1-8b95-7eb0487875c2"
+  ],
+  "usage": {
+    "model": "DeepSeek-V3.2",
+    "inputTokens": 108,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 39936,
+    "contextWindow": 200000,
+    "contextTokens": 40044,
+    "percentage": 20
+  }
+}

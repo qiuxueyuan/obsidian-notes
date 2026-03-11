@@ -39,7 +39,7 @@
     ]
   },
   "permissionMode": "yolo",
-  "model": "qwen3.5-plus",
+  "model": "DeepSeek-V3.2",
   "thinkingBudget": "off",
   "enableAutoTitleGeneration": true,
   "titleGenerationModel": "",
@@ -54,7 +54,7 @@
     "~/Downloads"
   ],
   "persistentExternalContextPaths": [],
-  "environmentVariables": "ANTHROPIC_API_KEY=sk-sp-fab26b7a3e0d479ea03df16a5dbe2bd9\nANTHROPIC_BASE_URL=https://coding.dashscope.aliyuncs.com/apps/anthropic\nANTHROPIC_MODEL=qwen3.5-plus",
+  "environmentVariables": "ANTHROPIC_API_KEY=sk-2a15390713ec4c22b8b4c6185b71373b\nANTHROPIC_BASE_URL=hhttps://api.deepseek.com/anthropic\nANTHROPIC_MODEL=DeepSeek-V3.2",
   "envSnippets": [],
   "customContextLimits": {},
   "keyboardNavigation": {
@@ -70,7 +70,7 @@
   "loadUserClaudeSettings": true,
   "lastClaudeModel": "haiku",
   "lastCustomModel": "",
-  "lastEnvHash": "ANTHROPIC_BASE_URL=https://coding.dashscope.aliyuncs.com/apps/anthropic|ANTHROPIC_MODEL=qwen3.5-plus",
+  "lastEnvHash": "ANTHROPIC_BASE_URL=hhttps://api.deepseek.com/anthropic|ANTHROPIC_MODEL=DeepSeek-V3.2",
   "maxTabs": 3,
   "tabBarPosition": "input",
   "enableAutoScroll": true,

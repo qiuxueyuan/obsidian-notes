@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 AI 编程知识库 - 导航主页</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 基础样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        /* 容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 头部区域 */
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            color: white;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.2;
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .header h1 {
+            font-size: 3.2rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto 25px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 15px 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* 主要导航区域 */
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 40px 0 25px;
+            color: #2d3748;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title i {
+            color: #667eea;
+        }
+
+        /* 卡片网格 */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-color: #667eea;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--card-color), var(--card-color-light));
+        }
+
+        .card-icon {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--card-color);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: #2d3748;
+        }
+
+        .card p {
+            color: #4a5568;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--card-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: gap 0.3s;
+        }
+
+        .card-link:hover {
+            gap: 12px;
+        }
+
+        /* 卡片颜色定义 */
+        .card-programming {
+            --card-color: #4299e1;
+            --card-color-light: #90cdf4;
+        }
+
+        .card-frameworks {
+            --card-color: #48bb78;
+            --card-color-light: #9ae6b4;
+        }
+
+        .card-projects {
+            --card-color: #ed8936;
+            --card-color-light: #fbd38d;
+        }
+
+        .card-interview {
+            --card-color: #9f7aea;
+            --card-color-light: #d6bcfa;
+        }
+
+        .card-learning {
+            --card-color: #f56565;
+            --card-color-light: #fc8181;
+        }
+
+        .card-productivity {
+            --card-color: #0bc5ea;
+            --card-color-light: #90e0ef;
+        }
+
+        .card-resources {
+            --card-color: #a0aec0;
+            --card-color-light: #cbd5e0;
+        }
+
+        .card-daily {
+            --card-color: #f6ad55;
+            --card-color-light: #fbd38d;
+        }
+
+        /* 快速链接区域 */
+        .quick-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 25px 0 40px;
+        }
+
+        .quick-link {
+            background: white;
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .quick-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+        }
+
+        /* 项目信息区域 */
+        .project-info {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+
+        .project-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #2d3748;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-item {
+            padding: 15px;
+            background: #f7fafc;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .info-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #2d3748;
+        }
+
+        .info-item p {
+            color: #4a5568;
+            font-size: 0.9rem;
+        }
+
+        /* 页脚 */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            color: #718096;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-link {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-link:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .header p {
+                font-size: 1.1rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header .stats {
+                gap: 15px;
+            }
+
+            .stat-item {
+                padding: 12px 20px;
+            }
+
+            .stat-number {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 40px 15px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .quick-links {
+                justify-content: center;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 动画效果 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            animation: fadeInUp 0.5s ease-out forwards;
+            opacity: 0;
+        }
+
+        .card:nth-child(1) { animation-delay: 0.1s; }
+        .card:nth-child(2) { animation-delay: 0.2s; }
+        .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.4s; }
+        .card:nth-child(5) { animation-delay: 0.5s; }
+        .card:nth-child(6) { animation-delay: 0.6s; }
+        .card:nth-child(7) { animation-delay: 0.7s; }
+        .card:nth-child(8) { animation-delay: 0.8s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部区域 -->
+        <header class="header">
+            <h1><i class="fas fa-rocket"></i> AI 编程知识库</h1>
+            <p>个人知识管理系统 | 编程学习 · 项目实战 · 面试准备 · 效率提升</p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">知识分类</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">学习笔记</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">代码示例</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">持续更新</span>
+                    <span class="stat-label">知识积累</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- 主要导航区域 -->
+        <section>
+            <h2 class="section-title"><i class="fas fa-book"></i> 知识分类导航</h2>
+            <div class="cards-grid">
+                <!-- 编程语言 -->
+                <div class="card card-programming" onclick="window.location.href='01 编程语言/01-编程语言索引.md'">
+                    <div class="card-icon"><i class="fab fa-python"></i></div>
+                    <h3>编程语言</h3>
+                    <p>Python、Java、Go、JavaScript、TypeScript等编程语言的核心知识点、语法特性和最佳实践。</p>
+                    <a href="01 编程语言/01-编程语言索引.md" class="card-link">
+                        浏览内容 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 框架工具 -->
+                <div class="card card-frameworks" onclick="window.location.href='02 框架工具/02-框架工具索引.md'">
+                    <div class="card-icon"><i class="fas fa-tools"></i></div>
+                    <h3>框架工具</h3>
+                    <p>Vue、React、Spring、Git、Docker、Kubernetes等开发框架和工具的深入解析。</p>
+                    <a href="02 框架工具/02-框架工具索引.md" class="card-link">
+                        浏览内容 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 项目实战 -->
+                <div class="card card-projects" onclick="window.location.href='03 项目实战/03-项目实战索引.md'">
+                    <div class="card-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>项目实战</h3>
+                    <p>真实项目经验沉淀、架构设计、踩坑记录、解决方案和性能优化实践。</p>
+                    <a href="03 项目实战/03-项目实战索引.md" class="card-link">
+                        浏览内容 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 面试刷题 -->
+                <div class="card card-interview" onclick="window.location.href='04 面试刷题/04-面试刷题索引.md'">
+                    <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>面试刷题</h3>
+                    <p>算法题解、数据结构、系统设计、面试考点、八股文整理和面试经验分享。</p>
+                    <a href="04 面试刷题/04-面试刷题索引.md" class="card-link">
+                        浏览内容 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 学习笔记 -->
+                <div class="card card-learning" onclick="window.location.href='05 学习笔记/05-学习笔记索引.md'">
+                    <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>学习笔记</h3>
+                    <p>课程学习、文档阅读、技术博客的精华摘录、系统化整理和知识内化。</p>
+                    <a href="05 学习笔记/05-学习笔记索引.md" class="card-link">
+                        浏览内容 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 效率方法 -->
+                <div class="card card-productivity" onclick="window.location.href='06 效率方法/06-效率方法索引.md'">
+                    <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>效率方法</h3>
+                    <p>编程效率提升、学习方法论、工作流程优化、工具使用技巧和时间管理。</p>
+                    <a href="06 效率方法/06-效率方法索引.md" class="card-link">
+                        浏览内容 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 资源附件 -->
+                <div class="card card-resources" onclick="window.location.href='99 资源附件'">
+                    <div class="card-icon"><i class="fas fa-folder-open"></i></div>
+                    <h3>资源附件</h3>
+                    <p>截图、代码片段、电子书、思维导图、设计稿等各类学习资源库。</p>
+                    <a href="99 资源附件" class="card-link">
+                        浏览内容 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- 每日资讯 -->
+                <div class="card card-daily" onclick="window.location.href='60 每日60s读懂世界'">
+                    <div class="card-icon"><i class="fas fa-globe-asia"></i></div>
+                    <h3>每日资讯</h3>
+                    <p>每日60秒读懂世界，了解科技动态、行业趋势和全球资讯。</p>
+                    <a href="60 每日60s读懂世界" class="card-link">
+                        浏览内容 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 快速链接 -->
+        <section>
+            <h2 class="section-title"><i class="fas fa-link"></i> 快速链接</h2>
+            <div class="quick-links">
+                <a href="00 总览/00-知识库入口.md" class="quick-link">
+                    <i class="fas fa-door-open"></i> 知识库入口
+                </a>
+                <a href="00 总览/00-知识库主页.md" class="quick-link">
+                    <i class="fas fa-home"></i> Obsidian主页
+                </a>
+                <a href="05 学习笔记/05-学习笔记索引.md" class="quick-link">
+                    <i class="fas fa-graduation-cap"></i> 开始学习
+                </a>
+                <a href="03 项目实战/03-项目实战索引.md" class="quick-link">
+                    <i class="fas fa-code"></i> 项目实战
+                </a>
+                <a href="04 面试刷题/04-面试刷题索引.md" class="quick-link">
+                    <i class="fas fa-clipboard-list"></i> 面试刷题
+                </a>
+                <a href="README.md.bak" class="quick-link">
+                    <i class="fas fa-file-alt"></i> 旧版README
+                </a>
+                <a href=".git" class="quick-link">
+                    <i class="fab fa-git-alt"></i> Git仓库
+                </a>
+            </div>
+        </section>
+
+        <!-- 项目信息 -->
+        <section class="project-info">
+            <h3><i class="fas fa-info-circle"></i> 项目信息</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4><i class="fas fa-cube"></i> 项目结构</h4>
+                    <p>基于目录分类的知识管理系统，每个目录都有索引文件和README说明。</p>
+                </div>
+                <div class="info-item">
+                    <h4><i class="fas fa-sync-alt"></i> 同步机制</h4>
+                    <p>使用Git进行版本控制，支持多设备同步，确保知识库数据安全。</p>
+                </div>
+                <div class="info-item">
+                    <h4><i class="fas fa-search"></i> 搜索功能</h4>
+                    <p>支持全文搜索、标签过滤、双链导航，快速定位所需知识。</p>
+                </div>
+                <div class="info-item">
+                    <h4><i class="fas fa-chart-line"></i> 成长记录</h4>
+                    <p>记录学习轨迹、项目经验、面试准备，可视化知识积累过程。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="https://github.com" class="footer-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://obsidian.md" class="footer-link" target="_blank">
+                    <i class="fas fa-book"></i> Obsidian
+                </a>
+                <a href="mailto:example@example.com" class="footer-link">
+                    <i class="fas fa-envelope"></i> 联系
+                </a>
+            </div>
+            <p>🚀 持续学习，持续成长 | 📚 个人知识管理系统</p>
+            <p>© 2026 AI 编程知识库 | 最后更新: <span id="current-date"></span></p>
+            <p style="font-size: 0.8rem; margin-top: 10px; color: #a0aec0;">
+                <i class="fas fa-code"></i> 使用 HTML5 + CSS3 + Font Awesome 构建
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // 设置当前日期
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('zh-CN', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit'
+        });
+
+        // 卡片点击效果
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', function(e) {
+                if (!e.target.closest('a')) {
+                    const link = this.querySelector('a');
+                    if (link) {
+                        window.location.href = link.href;
+                    }
+                }
+            });
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 添加加载动画
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease-in';
+
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

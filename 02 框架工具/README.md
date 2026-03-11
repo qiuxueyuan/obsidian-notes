@@ -16,29 +16,30 @@
 
 | 内容类型 | 说明 | 示例 |
 |----------|------|------|
-| 前端框架 | Vue、React、Angular 等 | `Vue3 Composition API.md` |
-| 后端框架 | Spring、Django、Gin 等 | `Spring Boot 自动配置.md` |
-| 开发工具 | Git、Docker、IDE 等 | `Git Rebase 实战.md` |
-| 数据库 | MySQL、Redis、MongoDB 等 | `Redis 数据结构详解.md` |
-| 配置模板 | 常用配置文件模板 | `Docker Compose 模板.md` |
+| 前端框架 | Vue、React、Angular 等 | `030101-Vue3 Composition API.md` |
+| 后端框架 | Spring、Django、Gin 等 | `030102-Spring Boot 自动配置.md` |
+| 开发工具 | Git、Docker、IDE 等 | `030201-Git Rebase 实战.md` |
+| 数据库 | MySQL、Redis、MongoDB 等 | `030202-Redis 数据结构详解.md` |
+| 配置模板 | 常用配置文件模板 | `030301-Docker Compose 模板.md` |
 
 ## 📝 命名规范
 
-**格式**：`MMDD + 文件名.md`
+**格式**：`MMDD + 序号 + 文件名.md`
 
 - **MMDD**：4 位数字，表示创建日期（月 + 日）
+- **序号**：2 位数字，表示当日创建的顺序（01, 02, 03...）
 - **文件名**：`框架名/工具名 + 主题` 或 `主题名`
 
 ### 示例
 
 ```
 02 框架工具/
-├── 0225-Vue3 响应式原理.md         # 2 月 25 日创建
-├── 0226-React Hooks 最佳实践.md    # 2 月 26 日创建
-├── 0228-Spring Boot 启动流程.md    # 2 月 28 日创建
-├── 0301-Git 分支管理策略.md        # 3 月 1 日创建
-├── 0301-Docker 多阶段构建.md       # 3 月 1 日创建
-└── 0302-VSCode 高效配置.md         # 3 月 2 日创建
+├── 022501-Vue3 响应式原理.md         # 2 月 25 日创建的第1个文件
+├── 022502-React Hooks 最佳实践.md    # 2 月 25 日创建的第2个文件
+├── 022601-Spring Boot 启动流程.md    # 2 月 26 日创建的第1个文件
+├── 030101-Git 分支管理策略.md        # 3 月 1 日创建的第1个文件
+├── 030102-Docker 多阶段构建.md       # 3 月 1 日创建的第2个文件
+└── 030201-VSCode 高效配置.md         # 3 月 2 日创建的第1个文件
 ```
 
 ### 子目录建议（可选）

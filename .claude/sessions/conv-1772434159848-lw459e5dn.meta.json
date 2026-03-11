@@ -3,9 +3,9 @@
   "title": "Greet in Chinese",
   "titleGenerationStatus": "success",
   "createdAt": 1772434159858,
-  "updatedAt": 1772689457378,
-  "lastResponseAt": 1772689457378,
-  "sessionId": "7bea6343-a823-47e3-9068-3739b7444d61",
+  "updatedAt": 1773024531834,
+  "lastResponseAt": 1773024174431,
+  "sessionId": null,
   "sdkSessionId": "7bea6343-a823-47e3-9068-3739b7444d61",
   "previousSdkSessionIds": [
     "2a9d504b-5680-41c9-b24d-57bc8c22c36e"
@@ -13,11 +13,11 @@
   "currentNote": "00 总览/00-知识库入口.md",
   "usage": {
     "model": "qwen3.5-plus",
-    "inputTokens": 498,
+    "inputTokens": 0,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 43392,
+    "cacheReadInputTokens": 0,
     "contextWindow": 200000,
-    "contextTokens": 43890,
-    "percentage": 22
+    "contextTokens": 0,
+    "percentage": 0
   }
 }
